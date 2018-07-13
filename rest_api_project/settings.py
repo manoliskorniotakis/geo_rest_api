@@ -74,26 +74,14 @@ WSGI_APPLICATION = 'rest_api_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Measurements',
-        'USER': 'cr',
-        'PASSWORD': 'left_R',
-        'HOST': 'test.hua.gr',
-        'PORT': '5432',
-    }
-}
-'''
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Measurements',
-        'USER': 'postgres',
-        'PASSWORD': 'conte1990',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
